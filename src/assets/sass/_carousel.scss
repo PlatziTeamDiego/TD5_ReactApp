@@ -48,12 +48,15 @@
           background-color: black;
           color: white;
           padding: 20px;
-          margin: 0;
+          margin: 0 3px;
           border: none;
           margin-top: 40px;
           &:hover, &:active {
                   background-color: white;
                   color: black;
+          }
+          &:focus {
+            outline: none;
           }
       }
   }
