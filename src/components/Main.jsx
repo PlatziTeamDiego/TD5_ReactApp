@@ -4,12 +4,11 @@ import Skill from './Skill';
 
 import profile from '../assets/images/tecnic-profile.png';
 import code from '../assets/images/code.png';
-import power from '../assets/images/power-1.png';
-import weakness from '../assets/images/weakness-1.png';
+import * as imgRandom from '../imgrandom.js';
 
 const Main = (props) => {
   return (
-    <main>  
+    <main>
       <section className='profile'>
         <div className='section-title'>
           <div className='container-icon'>
@@ -74,7 +73,8 @@ const Main = (props) => {
           </div>
           <div className='power profile__values'>
 
-            <img src={power} alt='' />
+            <img src={imgRandom.skillAvatar()[0]} alt='' />
+
 
             <div className='profile__values__desc'>
               <h3>Mi super poder</h3>
@@ -85,7 +85,7 @@ const Main = (props) => {
           </div>
           <div className='weakness profile__values'>
 
-            <img src={weakness} alt='' />
+            <img src={imgRandom.skillAvatar()[1]} alt='' />
 
             <div className='profile__values__desc'>
               <h3>Mi mayor debilidad</h3>
