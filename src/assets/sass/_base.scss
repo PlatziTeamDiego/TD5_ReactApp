@@ -1,21 +1,14 @@
-
-$color-one: #F5C022;
-$color-two: #E53BF5;
-$color-three: #F5972F;
-$color-four: #40C2F5;
-$color-five: #9E4EF5;
-$color-six: #4CF5A6;
-$color-seven: #F54267;
-
-$color: $color-seven;
-
-@function aclarar($color) {
-    @return lighten($color, 30%);
+:root {
+    --color:  #e53bf5;
+    --dark-color:#57055f;
+    --light-color: #f8cdfc;
 }
 
-@function oscurecer($color) {
-    @return darken($color, 40%);
-}
+$color: var(--color);
+$dark-color: var(--dark-color);
+$light-color: var(--light-color);
+
+
 
 $standar-margin: 30px;
 
@@ -24,5 +17,5 @@ body {
  }
  
  h1, h2, h3, h4, h5 {
-     color: oscurecer($color);
+     color: $dark-color;
  }
