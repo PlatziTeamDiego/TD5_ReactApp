@@ -2,14 +2,14 @@ import React from 'react';
 
 import Skill from './Skill';
 
-import profile from '../assets/images/tecnic-profile.svg';
-import code from '../assets/images/code.svg';
+import profile from '../assets/images/tecnic-profile.png';
+import code from '../assets/images/code.png';
 import power from '../assets/images/power-1.png';
 import weakness from '../assets/images/weakness-1.png';
 
 const Main = (props) => {
   return (
-    <main>  
+    <main>
       <section className='profile'>
         <div className='section-title'>
           <div className='container-icon'>

@@ -3,6 +3,8 @@
   padding: $standar-margin;
   overflow: hidden;
   height: 300px;
+  max-width: 100%;
+  position: relative;
 
   &__group {
    position: absolute;
@@ -14,7 +16,7 @@
   }
 
   &__item {
-      color: oscurecer($color);
+      color: $dark-color;
       text-decoration: none;
       font-weight: 600;
       text-align: center;
