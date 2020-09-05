@@ -1,3 +1,8 @@
+@media screen and (min-width:1025px) {
+.about-me__desc {
+    width: 40%;
+    }
+}
 @media screen and (max-width:1024px) {
 
     .profile__container {
@@ -31,9 +36,9 @@
                 z-index: 1;
             }
             &__desc {
-                border-top: 1px solid oscurecer($color);
-                border-bottom: 1px solid oscurecer($color);
-                border-right: 1px solid oscurecer($color);
+                border-top: 1px solid $dark-color;
+                border-bottom: 1px solid $dark-color;
+                border-right: 1px solid $dark-color;
                 margin-left: -70px;
                 padding-left: 80px;
                 padding-right: 60px;
@@ -62,9 +67,9 @@
                 z-index: 1;
             }
         &__desc {
-            border-top: 1px solid oscurecer($color);
-            border-bottom: 1px solid oscurecer($color);
-            border-right: 1px solid oscurecer($color);
+            border-top: 1px solid $dark-color;
+            border-bottom: 1px solid $dark-color;
+            border-right: 1px solid $dark-color;
             margin-left: -70px;
             padding-left: 80px;
             padding-right: 60px;
@@ -93,9 +98,9 @@
                 z-index: 1;
             }
             &__desc {
-                border-top: 1px solid oscurecer($color);
-                border-bottom: 1px solid oscurecer($color);
-                border-right: 1px solid oscurecer($color);
+                border-top: 1px solid $dark-color;
+                border-bottom: 1px solid $dark-color;
+                border-right: 1px solid $dark-color;
                 margin-left: -70px;
                 padding-left: 80px;
                 padding-right: 30px;
@@ -140,10 +145,10 @@
             z-index: 1;
         }
         &__desc {
-            border-top: 1px solid oscurecer($color);
-            border-bottom: 1px solid oscurecer($color);
-            border-right: 1px solid oscurecer($color);
-            border-left: 1px solid oscurecer($color);
+            border-top: 1px solid $dark-color;
+            border-bottom: 1px solid $dark-color;
+            border-right: 1px solid $dark-color;
+            border-left: 1px solid $dark-color;
             margin-left: -78px;
             padding-left: 80px;
             padding-right: 10px;

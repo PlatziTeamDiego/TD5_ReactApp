@@ -20,7 +20,7 @@ class App extends Component {
       error: null,
       data: undefined,
       modalIsOpen: false,
-      memberSelected: 0
+      memberSelected: 0,
     };
   }
 
@@ -40,13 +40,23 @@ class App extends Component {
     }
   };
 
+  setMemberSelected = (item) => {
+    this.setState({ memberSelected: item },
+      () => {
+        const member = this.state.data[item];
+        document.documentElement.style.setProperty('--color', member.color);
+        document.documentElement.style.setProperty('--dark-color', member.darkColor);
+        document.documentElement.style.setProperty('--light-color', member.lightColor);
+      });
+  }
+
   render() {
     const { data, memberSelected } = this.state;
     if (data) {
       return (
         <>
           <Normalize />
-          <Navbar members={data} itemSelected={(item) => this.setState({ memberSelected: item })} />
+          <Navbar members={data} itemSelected={this.setMemberSelected} />
           <Header member={data[memberSelected]} />
           <Main info={data[memberSelected]} />
           <Footer social={data[memberSelected]} />

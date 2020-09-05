@@ -8,7 +8,7 @@ const Item = (props) => {
     <div>
       <a key={`index-${fullname}`} className={className} href='/'>
         <img src={photo} alt='' />
-        <span>{fullname}</span>
+        {/* <span>{fullname}</span> */}
       </a>
     </div>
   );

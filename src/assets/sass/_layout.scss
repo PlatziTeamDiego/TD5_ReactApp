@@ -1,5 +1,5 @@
 .about-me {
-    background-color: aclarar($color);
+    background-color: $light-color;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -46,7 +46,7 @@
     }
 
     &__card {
-        border:  1px solid oscurecer($color);
+        border:  1px solid $dark-color;
         padding: 20px;
 
         h3 {
@@ -64,18 +64,19 @@
             z-index: 1;
         }
         &__desc {
-            border-top: 1px solid oscurecer($color);
-            border-bottom: 1px solid oscurecer($color);
-            border-right: 1px solid oscurecer($color);
+            border-top: 1px solid $dark-color;
+            border-bottom: 1px solid $dark-color;
+            border-right: 1px solid $dark-color;
             margin-left: -60px;
             padding-left: 70px;
             max-width: 300px;
             word-wrap: break-word;
+            padding-right: 10px;
         }
     }
 
     &__tools {
-        border: solid 1px oscurecer($color);
+        border: solid 1px $dark-color;
         margin-top: 20px;
 }
 
@@ -213,7 +214,7 @@
 /*End grid*/
 
 .footer-page {
-    background-color: oscurecer($color);
+    background-color: $dark-color;
     text-align: center;
     padding: 60px;
     h1 {
