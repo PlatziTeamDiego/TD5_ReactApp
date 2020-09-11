@@ -19,8 +19,11 @@
     border: solid $dark-color .25px;
     color: $dark-color;
     width: 30%;
+    max-width: 350px;
     margin: $standar-margin auto;
     display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .socials {
@@ -77,8 +80,8 @@
             border-right: 1px solid $dark-color;
             margin-left: -90px;
             padding-left: 60px;
-            width: 300px;
-            max-width: 300px;
+            width: 200px;
+            max-width: 200px;
             word-wrap: break-word;
             padding-right: 10px;
         }
