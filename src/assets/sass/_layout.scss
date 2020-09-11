@@ -10,9 +10,17 @@
         margin: 0 auto;
         margin-top: 1.5rem;
         margin-bottom: 1.5rem;
-        width: 70%;
+        width: 40%;
         word-wrap: break-word;
     }
+}
+
+.rol-badge {
+    border: solid $dark-color .25px;
+    color: $dark-color;
+    width: 30%;
+    margin: $standar-margin auto;
+    display: flex;
 }
 
 .socials {
@@ -36,7 +44,7 @@
 
 .profile {
     max-width: 1024px;
-    margin: 0 auto;
+    margin: $standar-margin auto;
 
     &__container {
         display: grid;
@@ -78,7 +86,8 @@
 
     &__tools {
         border: solid 1px $dark-color;
-        margin-top: 20px;
+        margin-top: 25px;
+        
 }
 
     &__skills-bars {
@@ -88,10 +97,11 @@
       li {
           background-color: $color;
           margin: 10px 0;
-          padding: 3px;
+          padding: 8px 3px;
           text-transform: uppercase;
           color: white;
           font-weight: 700;
+          font-size: 12px;
         }
 
           .bar-10 {
@@ -129,7 +139,7 @@
 
 .section-title {
     display: flex;
-    margin-top: $standar-margin;
+    
     align-items: center;
 
     .container-icon{
@@ -146,9 +156,6 @@
 
     .icon {
         width: 90%;        
-        // border-radius: 30%;
-        // padding: 12px;
-        // margin: 0 20px;
     }
 }
 
