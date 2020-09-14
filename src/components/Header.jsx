@@ -1,6 +1,7 @@
 import React from 'react';
 import { faFacebook, faTwitter, faInstagram, faLinkedin, faGithub } from '@fortawesome/free-brands-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import role from '../assets/images/rol.png';
 
 const Header = (props) => {
   return (
@@ -18,6 +19,17 @@ const Header = (props) => {
           <p className='about-me__desc'>
             {props.member.whoAreYou}
           </p>
+          <div className='rol-badge'>
+              <div className="section-title">
+                <div className="container-icon">
+                  <img className='icon' src={role} alt='team-role' />
+                </div>
+                <div className="rol-badge__desc">
+                  <h3>Team Rol</h3>
+                  <p>{props.member.fullname}</p>
+                </div>
+            </div> 
+          </div>
         </div>
       </section>
     </header>
