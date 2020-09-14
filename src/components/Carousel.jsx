@@ -18,7 +18,7 @@ class Carousel extends Component {
   }
 
   selected() {
-    const selection = this.generateItems()[2].key;
+    const selection = this.generateItems()[3].key;
     const { selected } = this.props;
     selected(selection);
   }
