@@ -142,19 +142,19 @@ $level3-left: -50px;
 
 .left-enter {
   opacity: 0;
-  left: $level2-left - $level2-width;
-  height: $level2-height - 30;
-  width: $level2-width - 20;
-  line-height: $level2-height - 30;
+  left: $level3-left - $level3-width;
+  height: $level3-height - 30;
+  width: $level3-width - 20;
+  line-height: $level3-height - 30;
   margin-top: 40px;
 }
 
 .left-enter.left-enter-active {
   opacity: 1;
-  left: $level2-left;
-  height: $level2-height;
-  width: $level2-width;
-  line-height: $level2-height;
+  left: $level3-left;
+  height: $level3-height;
+  width: $level3-width;
+  line-height: $level3-height;
   margin-top: 25px;
   transition: left 1s, opacity 1s, height 1s, width 1s, margin-top 1s,
     line-height 1s;
@@ -162,59 +162,59 @@ $level3-left: -50px;
 
 .left-leave {
   opacity: 1;
-  left: $level-2-left;
-  height: $level2-height;
-  width: $level2-width;
-  line-height: $level2-height;
+  left: $level-3-left;
+  height: $level3-height;
+  width: $level3-width;
+  line-height: $level3-height;
   margin-top: 25px;
 }
 
 .left-leave.left-leave-active {
-  left: $level-2-left + $level2-width + 20;
+  left: $level-3-left + $level3-width + 20;
   opacity: 0;
-  height: $level2-height - 30;
+  height: $level3-height - 30;
   line-height: 120px;
   margin-top: 40px;
-  width: $level2-width - 20;
+  width: $level3-width - 20;
   transition: left 1s, opacity 1s, height 1s, width 1s, margin-top 1s,
     line-height 1s;
 }
 
 .right-enter {
   opacity: 0;
-  left: $level-2-left + $level2-width;
-  height: $level2-height - 30;
-  width: $level2-width - 20;
-  line-height: $level2-height - 30;
+  left: $level-3-left + $level3-width;
+  height: $level3-height - 30;
+  width: $level3-width - 20;
+  line-height: $level3-height - 30;
   margin-top: 40px;
 }
 
 .right-enter.right-enter-active {
-  left: $level-2-left;
+  left: $level-3-left;
   opacity: 1;
-  height: $level2-height;
+  height: $level3-height;
   margin-top: 25px;
-  line-height: $level2-height;
-  width: $level2-width;
+  line-height: $level3-height;
+  width: $level3-width;
   transition: left 1s, opacity 1s, height 1s, width 1s, margin-top 1s,
     line-height 1s;
 }
 
 .right-leave {
-  left: $level2-left;
-  height: $level2-height;
+  left: $level3-left;
+  height: $level3-height;
   opacity: 1;
   margin-top: 25px;
-  line-height: $level2-height;
-  width: $level2-width;
+  line-height: $level3-height;
+  width: $level3-width;
 }
 
 .right-leave.right-leave-active {
-  left: $level2-left - $level2-width;
+  left: $level3-left - $level3-width;
   opacity: 0;
-  height: $level2-height - 30;
-  width: $level2-width - 20;
-  line-height: $level2-height - 30;
+  height: $level3-height - 30;
+  width: $level3-width - 20;
+  line-height: $level3-height - 30;
   margin-top: 40px;
   transition: left 1s, opacity 1s, height 1s, width 1s, margin-top 1s,
     line-height 1s;

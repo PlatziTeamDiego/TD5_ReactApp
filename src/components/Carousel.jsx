@@ -26,18 +26,33 @@ class Carousel extends Component {
   generateItems() {
     let level;
     const itemsArray = [];
-    const { active, items } = this.state;
-    for (let i = active - 2; i < active + 3; i++) {
-      let index = i;
-      if (i < 0) {
-        index = items.length + i;
-      } else if (i >= items.length) {
-        index = i % items.length;
+    const { active, items, direction } = this.state;
+    if (direction === 'left') {
+      for (let i = active + 3; i > active - 4; i--) {
+        let index = i;
+        if (i < 0) {
+          index = items.length + i;
+        } else if (i >= items.length) {
+          index = i % items.length;
+        }
+        level = active - i;
+        itemsArray.push(
+          <Item key={index} fullname={items[index].fullname} photo={items[index].photo} level={level} />,
+        );
       }
-      level = active - i;
-      itemsArray.push(
-        <Item key={index} fullname={items[index].fullname} photo={items[index].photo} level={level} />,
-      );
+    } else {
+      for (let i = active - 3; i < active + 4; i++) {
+        let index = i;
+        if (i < 0) {
+          index = items.length + i;
+        } else if (i >= items.length) {
+          index = i % items.length;
+        }
+        level = active - i;
+        itemsArray.push(
+          <Item key={index} fullname={items[index].fullname} photo={items[index].photo} level={level} />,
+        );
+      }
     }
     return itemsArray;
   }
