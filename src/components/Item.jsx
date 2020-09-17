@@ -6,10 +6,9 @@ const Item = (props) => {
   const className = `slide__item level${level}`;
   return (
     <div>
-      <a key={`index-${fullname}`} className={className} href='javascript:void(0);'>
+      <div key={`index-${fullname}`} className={className}>
         <img src={photo} alt='' />
-        {/* <span>{fullname}</span> */}
-      </a>
+      </div>
     </div>
   );
 };

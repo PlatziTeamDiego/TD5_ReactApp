@@ -5,6 +5,9 @@
   height: 300px;
   max-width: 100%;
   position: relative;
+  h1{
+    display: none;
+  }
 
   &__group {
    position: absolute;
@@ -62,9 +65,23 @@
   }
 }
 
-.slide-full-page {
+.full-page {
   height: 100vh;
   justify-content: center;
+  padding-top: 10vh;
+  position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+  z-index: 2;
+  h1 {
+    display: block;
+    margin: 0;
+    text-align: center;
+    text-shadow: 2px 2px 2px white;
+    padding-bottom: 10px;
+  }
 }
 
 $level3-height: 100px;

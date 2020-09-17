@@ -20,7 +20,7 @@ class App extends Component {
       error: null,
       data: undefined,
       modalIsOpen: false,
-      memberSelected: 0,
+      memberSelected: undefined,
     };
   }
 
@@ -56,10 +56,14 @@ class App extends Component {
       return (
         <>
           <Normalize />
-          <Navbar members={data} itemSelected={this.setMemberSelected} />
-          <Header member={data[memberSelected]} />
-          <Main info={data[memberSelected]} />
-          <Footer social={data[memberSelected]} />
+          <Navbar members={data} fullPage={memberSelected} itemSelected={this.setMemberSelected} />
+          {memberSelected && (
+            <>
+              <Header member={data[memberSelected]} />
+              <Main info={data[memberSelected]} />
+              <Footer social={data[memberSelected]} />
+            </>
+          )}
         </>
       );
     }

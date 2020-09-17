@@ -57,6 +57,11 @@ class Carousel extends Component {
     return itemsArray;
   }
 
+  startOnClick() {
+    const { selected } = this.props;
+    selected('0');
+  }
+
   moveLeft() {
     const { active, items } = this.state;
     let newActive = active;
@@ -78,8 +83,14 @@ class Carousel extends Component {
 
   render() {
     const { direction } = this.state;
+    const { fullPage } = this.props;
     return (
-      <nav className='slide'>
+      <nav className={`slide ${fullPage === undefined && 'full-page'}`}>
+        <h1>
+          Platzi Master
+          <br />
+          Members Cohort 5
+        </h1>
         <ReactCSSTransitionGroup
           transitionName={direction}
           transitionEnterTimeout={500}
@@ -90,12 +101,20 @@ class Carousel extends Component {
           </div>
         </ReactCSSTransitionGroup>
         <div className='slide__buttons'>
-          <div className='slide__buttons-single' onClick={this.leftClick} role='button' tabIndex={0}>
-            <FontAwesomeIcon icon={faAngleLeft} />
-          </div>
-          <div className='slide__buttons-single' onClick={this.rightClick} role='button' tabIndex={0}>
-            <FontAwesomeIcon icon={faAngleRight} />
-          </div>
+          {fullPage !== undefined ? (
+            <>
+              <div className='slide__buttons-single' onClick={this.leftClick} role='button' tabIndex={0}>
+                <FontAwesomeIcon icon={faAngleLeft} />
+              </div>
+              <div className='slide__buttons-single' onClick={this.rightClick} role='button' tabIndex={0}>
+                <FontAwesomeIcon icon={faAngleRight} />
+              </div>
+            </>
+          ) : (
+            <div className='slide__buttons-single' onClick={() => this.startOnClick()} role='button' tabIndex={0}>
+              Start
+            </div>
+          )}
         </div>
       </nav>
     );
