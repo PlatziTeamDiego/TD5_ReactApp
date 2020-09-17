@@ -25,8 +25,8 @@ const Header = (props) => {
                   <img className='icon' src={role} alt='team-role' />
                 </div>
                 <div className="rol-badge__desc">
-                  <h3>Team Rol</h3>
-                  <p>{props.member.fullname}</p>
+                  <h3>Team Role</h3>
+                  <p>{props.member.role}</p>
                 </div>
             </div> 
           </div>
